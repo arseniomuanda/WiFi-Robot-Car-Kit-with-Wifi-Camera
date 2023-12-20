@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle Robo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #ecf0f1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h1, h2, h4 {
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 {
+            background-color: #34495e;
+            color: white;
+            padding: 12px;
+        }
+
+        h4 {
+            background-color: #f00;
+            color: white;
+            padding: 2px;
+        }
+
+        form {
+            max-width: 360px;
+            background-color: #ecf0f1;
+            padding: 12px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            box-sizing: border-box;
+        }
+
+        input {
+            width: 90%;
+            padding: 3px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #00ff00;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Controle do Robô</h1>
+
+    <!-- Formulário de Locomoção do Robô -->
+    <form action="/" method="post">
+        <h2>Locomoção do Robô</h2>
+        <input type="submit" value="Frente" name="Frente"/>
+        <input type="submit" value="Tras" name="Tras"/>
+        <input type="submit" value="Direita" name="Direita"/>
+        <input type="submit" value="Esquerda" name="Esquerda" />
+    </form>
+
+    <!-- Formulário de Movimentação da Câmara -->
+    <form action="/" method="post">
+        <h2>Movimentação da Câmara</h2>
+        <input type="submit" value="Câmera Lado" name="Câmera Lado"/>
+         <input type="submit" value="Câmera Lado Oposto" name="Câmera Lado Oposto"/>
+        <input type="submit" value="Câmera Baixo" name="Câmera Baixo"/>
+         <input type="submit" value="Câmera Cima" name="Câmera Cima"/>
+    </form>
+
+    <!-- Formulário de Movimentação do Braço -->
+    <form action="/" method="post">
+        <h2>Movimentação do Braço</h2>
+        <input type="submit" value="Levantar o Braço" name="Levantar o Braço"/>
+         <input type="submit" value="Baixar o Braço" name="Baixar o Braço"/>
+        <input type="submit" value="Mexe a menor parte do braço para cima" name="Mexe a menor parte do braço para cima"/>
+        <input type="submit" value="Mexe a menor parte do braço para baixo" name="Mexe a menor parte do braço para baixo" />
+    </form>
+
+    <!-- Formulário de Movimentação da Pinça -->
+    <form action="/" method="post">
+        <h2>Movimentação da Pinça</h2>
+        <input type="submit" value="Abrir Pinça" name="Abrir Pinça"/>
+        <input type="submit" value="Fechar Pinça" name="Fechar Pinça"/>
+        <input type="submit" value="Pinça Lado" name="Pinça Lado"/>
+        <input type="submit" value="Pinça Lado Oposto" name="Pinça Lado Oposto" />
+    </form>
+
+    <!-- Parar o Robô -->
+    <form action="/" method="post">
+        <h4>Parar o Robô</h4>
+        <input type="submit" value="Parar" name="Parar"/>
+    </form>
+</body>
+</html>
